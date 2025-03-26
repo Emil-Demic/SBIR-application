@@ -1,5 +1,7 @@
 # SBIR-frontend
 
+[Available online](https://staging.d3g394a9xcj50z.amplifyapp.com/)
+
 This application showcases the practical implementation of a novel scene-level sketch-based image retrieval model, developed as the capstone project for my bachelor's degree. \
 To use the app, browse through the displayed images and select one. Then, sketch the image and press "Search." The app will sort the images from most to least similar to your sketch based on the model's predictions. \
 The model is available in its own [repository](https://github.com/Emil-Demic/ConvNext-InfoNCE-SBIR).
