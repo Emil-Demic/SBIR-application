@@ -11,5 +11,4 @@ export const pageOpt = reactive({
 
 export const pageState = reactive({
   loading: false,
-  about: false
 })
