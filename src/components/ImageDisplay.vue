@@ -13,10 +13,10 @@
 </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from "vue";
 import { NImage, NPagination } from 'naive-ui';
-import { indicies, pageOpt } from "../scope.js";
+import { indicies, pageOpt } from "../scope.ts";
 
 const CDN_URL = "https://d2f5e6rx1vgqv1.cloudfront.net/CDN_images/"
 
