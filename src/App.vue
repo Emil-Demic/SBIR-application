@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { NButton } from "naive-ui";
 
 const openGithub = () => {
