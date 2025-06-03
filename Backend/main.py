@@ -39,7 +39,7 @@ class SBIR_API(LitAPI):
     
     def encode_response(self, output):
         _, I = self.index.search(output[0], self.k)
-        return {"body": I[0].tolist()}
+        return I[0].tolist()
         
 
 if __name__ == "__main__":
