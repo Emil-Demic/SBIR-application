@@ -76,7 +76,7 @@ const uploadCanvas = async () => {
     const imageBase64 = canvas.toDataURL("image/png");
     pageState.loading = true;
     try{
-        indicies.arr = await ky.post('https://sygvg7y3xr4kz36dtae5r72lx40tadxp.lambda-url.eu-central-1.on.aws/', {json: { image: imageBase64 }}).json();
+        indicies.arr  = await ky.post<number[]>('http://18.185.177.254/predict', {json: { image: imageBase64 }}).json();
         pageOpt.currIdx = 1;
     } catch (error) {
         console.error("Error fetching data:", error);
