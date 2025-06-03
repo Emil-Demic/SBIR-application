@@ -1,0 +1,13 @@
+[project]
+name = "sbir-serve"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "boto3>=1.38.23",
+    "faiss-cpu>=1.11.0",
+    "litserve>=0.2.10",
+    "onnxruntime>=1.22.0",
+    "pillow>=11.2.1",
+]
