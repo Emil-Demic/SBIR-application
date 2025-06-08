@@ -15,6 +15,8 @@ gallery_embeddings = np.load("/tmp/embeddings.npy")
 
 mean=[0.485, 0.456, 0.406]
 std=[0.229, 0.224, 0.225]
+mean = np.array(mean, dtype=np.float32).reshape(3, 1, 1)
+std = np.array(std, dtype=np.float32).reshape(3, 1, 1)
 
 def lambda_handler(event, context):
     try:
@@ -25,9 +27,7 @@ def lambda_handler(event, context):
         image = image.resize((224, 224), resample=Image.Resampling.BILINEAR).convert("RGB")
         image = np.array(image, dtype=np.float32) / 255.
         image = image.transpose(2, 0, 1)
-        image[0] = (image[0] - mean[0]) / std[0]
-        image[1] = (image[1] - mean[1]) / std[1]
-        image[2] = (image[2] - mean[2]) / std[2]
+        image =  (image - self.mean) / self.std
         image = np.expand_dims(image, 0)
 
         embedding = session.run(None, {'data': image})[0]
