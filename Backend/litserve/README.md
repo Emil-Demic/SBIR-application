@@ -1,3 +1,4 @@
+### The code for running a model server using LitServe (Preferred option)
 The app uses *uv* for Python dependency management. If you don't have *uv* installed, install it first. From the app directory, run:
 
 ```sh
