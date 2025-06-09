@@ -3,6 +3,7 @@
 from django.db import migrations
 from pgvector.django import VectorExtension
 
+# Migration that enables the pgvector extension on the postgres database
 
 class Migration(migrations.Migration):
     operations = [

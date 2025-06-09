@@ -12,7 +12,6 @@ import numpy as np
 
 
 session = InferenceSession("./api/model.onnx")
-gallery_embeddings = np.load("./api/embeddings.npy")
 
 mean=[0.485, 0.456, 0.406]
 std=[0.229, 0.224, 0.225]

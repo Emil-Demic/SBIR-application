@@ -3,10 +3,10 @@
 from django.db import migrations
 import numpy as np
 
+# Data migration that saves the image embeddings to the database
+
 def add_img_embeddings(apps, schema_editor):
-    # We can't import the Person model directly as it may be a newer
-    # version than this migration expects. We use the historical version.
-    embeds = np.load("/home/ec2-user/backend/api/embeddings.npy")
+    embeds = np.load("./api/embeddings.npy")
     Embedding = apps.get_model("api", "Embedding")
     for i, embed in enumerate(embeds):
         e = Embedding(embedding=embed, img_id=i)
