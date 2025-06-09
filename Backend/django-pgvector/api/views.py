@@ -11,8 +11,8 @@ from pgvector.django import L2Distance
 import numpy as np
 
 
-session = InferenceSession("/home/ec2-user/backend/api/model.onnx")
-gallery_embeddings = np.load("/home/ec2-user/backend/api/embeddings.npy")
+session = InferenceSession("./api/model.onnx")
+gallery_embeddings = np.load("./api/embeddings.npy")
 
 mean=[0.485, 0.456, 0.406]
 std=[0.229, 0.224, 0.225]

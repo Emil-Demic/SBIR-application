@@ -42,3 +42,6 @@ wheels/
 
 .env
 
+model.onnx
+embeddings.npy
+
