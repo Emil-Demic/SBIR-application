@@ -1,10 +1,11 @@
 # SBIR-frontend
 
-[Available online](https://staging.d3g394a9xcj50z.amplifyapp.com/)
+[Available online](https://app.sbir.superpowered-nutball.xyz/)
 
-This application showcases the practical implementation of a novel scene-level sketch-based image retrieval model, developed as the capstone project for my bachelor's degree. \
-To use the app, browse through the displayed images and select one. Then, sketch the image and press "Search." The app will sort the images from most to least similar to your sketch based on the model's predictions. \
-The model is available in its own [repository](https://github.com/Emil-Demic/ConvNext-InfoNCE-SBIR).
+This application showcases the practical implementation of a novel scene-level sketch-based image retrieval model. \
+To use the app, browse through the displayed images and select one. Then, sketch the image and press "Search." The app will sort the images from most to least similar to your sketch based on the model's predictions.
+The Gallery \
+The model is available in its own [repository](https://github.com/Emil-Demic/ConvNext-InfoNCE-SBIR) (will be made public upon paper acceptance).
 
 ## The Frontend
 
@@ -12,7 +13,7 @@ The application is built with Vue and utilizes the NaiveUI component library alo
 
 ## The backend
 
-The backend is written in Python and runs on an AWS Lambda function. The backend code can be found in the *Backend* directory.
+The repository's *Backend* directory contains multiple possible backend solutions, each organized in its own subdirectory with a corresponding README. The recommended option for deployment is LitServe, which is also the one currently used for the online deployment.
 
 ## Project Setup
 
