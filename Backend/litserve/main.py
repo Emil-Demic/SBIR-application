@@ -60,7 +60,7 @@ if __name__ == "__main__":
     cors_middleware = (
         CORSMiddleware, 
         {
-            "allow_origins": ["https://app.sbir.superpowered-nutball.xyz", "https://www.app.sbir.superpowered-nutball.xyz"]
+            "allow_origins": ["https://app.sbir.superpowered-nutball.xyz", "https://www.app.sbir.superpowered-nutball.xyz"],
             "allow_methods": ["GET", "POST"],
             "allow_headers": ["content-type"],
         }
