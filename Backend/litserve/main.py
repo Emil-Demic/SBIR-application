@@ -26,7 +26,7 @@ class SBIR_API(LitAPI):
         self.std = np.array(std, dtype=np.float32).reshape(3, 1, 1)
 
         # Set the number of images to return
-        self.k = 50
+        self.k = 60
 
     def decode_request(self, request):
         # Load the query image from request
