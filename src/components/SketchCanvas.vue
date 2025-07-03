@@ -76,7 +76,7 @@ const uploadCanvas = async () => {
     const imageBase64 = canvas.toDataURL("image/png");
     pageState.loading = true;
     try{
-        indicies.arr  = await ky.post<number[]>('https://api.sbir.superpowered-nutball.xyz/predict', {json: { image: imageBase64 }}).json();
+        indicies.arr  = await ky.post<number[]>('https://api.sbir.emil-demic.xyz/predict', {json: { image: imageBase64 }}).json();
         pageOpt.currIdx = 1;
     } catch (error) {
         console.error("Error fetching data:", error);

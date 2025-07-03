@@ -1,6 +1,6 @@
 # SBIR-frontend
 
-[Available online](https://app.sbir.superpowered-nutball.xyz/)
+[Available online](https://app.sbir.emil-demic.xyz/)
 
 This application showcases the practical implementation of a novel scene-level sketch-based image retrieval model. \
 To use the app, browse through the displayed images and select one. Then, sketch the image and press "Search." The app will sort the images from most to least similar to your sketch based on the model's predictions.
